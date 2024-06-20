@@ -1,0 +1,534 @@
+country_code,country,name,role,id_match,year
+FRA,France,Albert Batteux,COACH,4024,1960
+TCH,Czechoslovakia,Rudolf Vytlacil,COACH,4024,1960
+URS,Soviet Union,Gavril Kachalin,COACH,4023,1960
+TCH,Czechoslovakia,Rudolf Vytlacil,COACH,4023,1960
+,,Konstantin Beskov,COACH,3996,1964
+ESP,Spain,José Villalonga,COACH,3996,1964
+DEN,Denmark,Poul Petersen,COACH,3995,1964
+HUN,Hungary,Lajos Baroti,COACH,3995,1964
+,,Konstantin Beskov,COACH,3994,1964
+DEN,Denmark,Poul Petersen,COACH,3994,1964
+SRB,Serbia,Rajko Mitic,COACH,73910,1968
+ITA,Italy,Ferruccio Valcareggi,COACH,73910,1968
+URS,Soviet Union,Mikhail Yakuschin,COACH,3939,1968
+ENG,England,Sir Alf Ramsey,COACH,3939,1968
+BEL,Belgium,Raymond Goethals,COACH,3837,1972
+HUN,Hungary,Rudolf Illovszky,COACH,3837,1972
+GER,Germany,Helmut Schön,COACH,3836,1972
+BEL,Belgium,Raymond Goethals,COACH,3836,1972
+GER,Germany,Helmut Schön,COACH,3693,1976
+CZE,Czechia,Václav Ježek,COACH,3693,1976
+GER,Germany,Helmut Schön,COACH,3691,1976
+SRB,Serbia,Ante Mladinic,COACH,3691,1976
+NED,Netherlands,George Knobel,COACH,3690,1976
+CZE,Czechia,Václav Ježek,COACH,3690,1976
+GER,Germany,Jupp Derwall,COACH,3585,1980
+BEL,Belgium,Guy Thys,COACH,3585,1980
+ESP,Spain,Miguel Muñoz Mozún,COACH,3456,1984
+ROU,Romania,Mircea Lucescu,COACH,3456,1984
+POR,Portugal,Fernando Cabrita,COACH,3455,1984
+GER,Germany,Jupp Derwall,COACH,3455,1984
+NED,Netherlands,Rinus Michels,COACH,22,1988
+UKR,Ukraine,Valeriy Lobanovskiy,COACH,22,1988
+ITA,Italy,Azeglio Vicini,COACH,21,1988
+UKR,Ukraine,Valeriy Lobanovskiy,COACH,21,1988
+NED,Netherlands,Rinus Michels,COACH,20,1988
+GER,Germany,Franz Beckenbauer,COACH,20,1988
+UKR,Ukraine,Valeriy Lobanovskiy,COACH,17,1988
+ENG,England,Bobby Robson,COACH,17,1988
+ESP,Spain,Miguel Muñoz Mozún,COACH,9,1988
+GER,Germany,Franz Beckenbauer,COACH,9,1988
+GER,Germany,Josef Emmanuel Piontek,COACH,10,1988
+ITA,Italy,Azeglio Vicini,COACH,10,1988
+NED,Netherlands,Rinus Michels,COACH,15,1988
+ENG,England,Bobby Robson,COACH,15,1988
+ESP,Spain,Miguel Muñoz Mozún,COACH,8,1988
+ITA,Italy,Azeglio Vicini,COACH,8,1988
+GER,Germany,Josef Emmanuel Piontek,COACH,7,1988
+GER,Germany,Franz Beckenbauer,COACH,7,1988
+UKR,Ukraine,Valeriy Lobanovskiy,COACH,14,1988
+NED,Netherlands,Rinus Michels,COACH,14,1988
+ENG,England,Jack Charlton,COACH,13,1988
+ENG,England,Bobby Robson,COACH,13,1988
+ESP,Spain,Miguel Muñoz Mozún,COACH,6,1988
+GER,Germany,Josef Emmanuel Piontek,COACH,6,1988
+GER,Germany,Berti Vogts,COACH,6098,1992
+DEN,Denmark,Richard Møller-nielsen,COACH,6098,1992
+DEN,Denmark,Richard Møller-nielsen,COACH,6097,1992
+NED,Netherlands,Rinus Michels,COACH,6097,1992
+GER,Germany,Berti Vogts,COACH,6096,1992
+SWE,Sweden,Tommy Svensson,COACH,6096,1992
+URS,Soviet Union,Anatoli Byshovets,COACH,5098,1992
+,,Andy Roxburgh,COACH,5098,1992
+GER,Germany,Berti Vogts,COACH,5097,1992
+NED,Netherlands,Rinus Michels,COACH,5097,1992
+ENG,England,Graham Taylor,COACH,5091,1992
+SWE,Sweden,Tommy Svensson,COACH,5091,1992
+URS,Soviet Union,Anatoli Byshovets,COACH,5096,1992
+NED,Netherlands,Rinus Michels,COACH,5096,1992
+GER,Germany,Berti Vogts,COACH,5095,1992
+,,Andy Roxburgh,COACH,5095,1992
+ENG,England,Graham Taylor,COACH,5089,1992
+FRA,France,Michel Platini,COACH,5089,1992
+GER,Germany,Berti Vogts,COACH,5094,1992
+URS,Soviet Union,Anatoli Byshovets,COACH,5094,1992
+,,Andy Roxburgh,COACH,5093,1992
+NED,Netherlands,Rinus Michels,COACH,5093,1992
+ENG,England,Graham Taylor,COACH,5108,1992
+DEN,Denmark,Richard Møller-nielsen,COACH,5108,1992
+FRA,France,Michel Platini,COACH,5099,1992
+SWE,Sweden,Tommy Svensson,COACH,5099,1992
+GER,Germany,Berti Vogts,COACH,52917,1996
+CZE,Czechia,Dusan Uhrin,COACH,52917,1996
+ENG,England,Terry Venables,COACH,52916,1996
+GER,Germany,Berti Vogts,COACH,52916,1996
+CZE,Czechia,Dusan Uhrin,COACH,52915,1996
+FRA,France,Aimé Jacquet,COACH,52915,1996
+CRO,Croatia,Miroslav Blaževic,COACH,52913,1996
+GER,Germany,Berti Vogts,COACH,52913,1996
+GER,Germany,Berti Vogts,COACH,52511,1996
+ITA,Italy,Arrigo Sacchi,COACH,52511,1996
+CZE,Czechia,Dusan Uhrin,COACH,52510,1996
+RUS,Russia,Oleg Romantsev,COACH,52510,1996
+DEN,Denmark,Richard Møller-nielsen,COACH,52517,1996
+TUR,Türkiye,Fatih Terim,COACH,52517,1996
+POR,Portugal,António Luis Oliveira Ribeiro,COACH,52516,1996
+CRO,Croatia,Miroslav Blaževic,COACH,52516,1996
+ENG,England,Terry Venables,COACH,52487,1996
+NED,Netherlands,Guus Hiddink,COACH,52487,1996
+POR,Portugal,Artur Jorge Melo Teixeira,COACH,52486,1996
+SCO,Scotland,Craig Brown,COACH,52486,1996
+BUL,Bulgaria,Dimitar Penev,COACH,52504,1996
+FRA,France,Aimé Jacquet,COACH,52504,1996
+DEN,Denmark,Richard Møller-nielsen,COACH,52515,1996
+CRO,Croatia,Miroslav Blaževic,COACH,52515,1996
+GER,Germany,Berti Vogts,COACH,52509,1996
+RUS,Russia,Oleg Romantsev,COACH,52509,1996
+ESP,Spain,Javier Clemente Lázaro,COACH,52503,1996
+FRA,France,Aimé Jacquet,COACH,52503,1996
+ENG,England,Terry Venables,COACH,52485,1996
+SCO,Scotland,Craig Brown,COACH,52485,1996
+ITA,Italy,Arrigo Sacchi,COACH,52508,1996
+CZE,Czechia,Dusan Uhrin,COACH,52508,1996
+NED,Netherlands,Guus Hiddink,COACH,52484,1996
+POR,Portugal,Artur Jorge Melo Teixeira,COACH,52484,1996
+ROU,Romania,Anghel Iordănescu,COACH,52502,1996
+BUL,Bulgaria,Dimitar Penev,COACH,52502,1996
+RUS,Russia,Oleg Romantsev,COACH,52507,1996
+ITA,Italy,Arrigo Sacchi,COACH,52507,1996
+FRA,France,Aimé Jacquet,COACH,52501,1996
+ROU,Romania,Anghel Iordănescu,COACH,52501,1996
+SCO,Scotland,Craig Brown,COACH,52483,1996
+NED,Netherlands,Guus Hiddink,COACH,52483,1996
+POR,Portugal,António Luis Oliveira Ribeiro,COACH,52512,1996
+DEN,Denmark,Richard Møller-nielsen,COACH,52512,1996
+CZE,Czechia,Dusan Uhrin,COACH,52506,1996
+GER,Germany,Berti Vogts,COACH,52506,1996
+BUL,Bulgaria,Dimitar Penev,COACH,52500,1996
+ESP,Spain,Javier Clemente Lázaro,COACH,52500,1996
+POR,Portugal,Artur Jorge Melo Teixeira,COACH,52482,1996
+ENG,England,Terry Venables,COACH,52482,1996
+ITA,Italy,Dino Zoff,COACH,65299,2000
+FRA,France,Roger Lemerre,COACH,65299,2000
+FRA,France,Roger Lemerre,COACH,65183,2000
+SRB,Serbia,Vujadin Boškov,COACH,65181,2000
+NED,Netherlands,Frank Rijkaard,COACH,65181,2000
+ROU,Romania,Emeric Ienei,COACH,65180,2000
+ITA,Italy,Dino Zoff,COACH,65180,2000
+TUR,Türkiye,Mustafa Denizli,COACH,65179,2000
+NED,Netherlands,Frank Rijkaard,COACH,64868,2000
+FRA,France,Roger Lemerre,COACH,64868,2000
+CZE,Czechia,Jozef Chovanec,COACH,64867,2000
+SWE,Sweden,Bosse Johansson,COACH,64867,2000
+NOR,Norway,Nils Johan Semb,COACH,64862,2000
+SVN,Slovenia,Srečko Katanec,COACH,64862,2000
+ESP,Spain,José Antonio Camacho,COACH,64861,2000
+SRB,Serbia,Vujadin Boškov,COACH,64861,2000
+GER,Germany,Erich Ribbeck,COACH,64850,2000
+ROU,Romania,Emeric Ienei,COACH,64849,2000
+ENG,England,Kevin Keegan,COACH,64849,2000
+SWE,Sweden,Tommy Söderberg,COACH,64856,2000
+ITA,Italy,Dino Zoff,COACH,64856,2000
+BEL,Belgium,Robert Waseige,COACH,64855,2000
+TUR,Türkiye,Mustafa Denizli,COACH,64855,2000
+SRB,Serbia,Vujadin Boškov,COACH,64859,2000
+NOR,Norway,Nils Johan Semb,COACH,64859,2000
+ESP,Spain,José Antonio Camacho,COACH,64860,2000
+SVN,Slovenia,Srečko Katanec,COACH,64860,2000
+GER,Germany,Erich Ribbeck,COACH,64847,2000
+ENG,England,Kevin Keegan,COACH,64847,2000
+ROU,Romania,Emeric Ienei,COACH,64848,2000
+FRA,France,Roger Lemerre,COACH,64865,2000
+CZE,Czechia,Jozef Chovanec,COACH,64865,2000
+TUR,Türkiye,Mustafa Denizli,COACH,64854,2000
+SWE,Sweden,Tommy Söderberg,COACH,64854,2000
+BEL,Belgium,Robert Waseige,COACH,64853,2000
+ITA,Italy,Dino Zoff,COACH,64853,2000
+NOR,Norway,Nils Johan Semb,COACH,64858,2000
+ESP,Spain,José Antonio Camacho,COACH,64858,2000
+ENG,England,Kevin Keegan,COACH,64846,2000
+ROU,Romania,Emeric Ienei,COACH,64845,2000
+GER,Germany,Erich Ribbeck,COACH,64845,2000
+CZE,Czechia,Jozef Chovanec,COACH,64864,2000
+NED,Netherlands,Frank Rijkaard,COACH,64864,2000
+ITA,Italy,Dino Zoff,COACH,64852,2000
+TUR,Türkiye,Mustafa Denizli,COACH,64852,2000
+SWE,Sweden,Tommy Söderberg,COACH,64851,2000
+BEL,Belgium,Robert Waseige,COACH,64851,2000
+SWE,Sweden,Tommy Söderberg,COACH,73753,2004
+DEN,Denmark,Morten Olsen,COACH,73753,2004
+ESP,Spain,Luis Aragonés Suárez,COACH,301696,2008
+GER,Germany,Joachim Löw,COACH,301696,2008
+ESP,Spain,Luis Aragonés Suárez,COACH,301698,2008
+NED,Netherlands,Guus Hiddink,COACH,301698,2008
+TUR,Türkiye,Fatih Terim,COACH,301697,2008
+GER,Germany,Joachim Löw,COACH,301697,2008
+ITA,Italy,Roberto Donadoni,COACH,301702,2008
+ESP,Spain,Luis Aragonés Suárez,COACH,301702,2008
+NED,Netherlands,Guus Hiddink,COACH,301701,2008
+NED,Netherlands,Marco van Basten,COACH,301701,2008
+TUR,Türkiye,Fatih Terim,COACH,301700,2008
+CRO,Croatia,Slaven Bilić,COACH,301700,2008
+GER,Germany,Hans-Dieter Flick,ASSISTANT_COACH,301699,2008
+BRA,Brazil,Luiz Felipe Scolari,COACH,301699,2008
+SWE,Sweden,Lars Lagerbäck,COACH,300705,2008
+NED,Netherlands,Guus Hiddink,COACH,300705,2008
+ESP,Spain,Luis Aragonés Suárez,COACH,300704,2008
+GER,Germany,Otto-Heinz Rehhagel,COACH,300704,2008
+ITA,Italy,Roberto Donadoni,COACH,300703,2008
+FRA,France,Raymond Domenech,COACH,300703,2008
+ROU,Romania,Victor Piturca,COACH,300702,2008
+NED,Netherlands,Marco van Basten,COACH,300702,2008
+GER,Germany,Joachim Löw,COACH,300700,2008
+AUT,Austria,Josef Hickersberger,COACH,300700,2008
+CRO,Croatia,Slaven Bilić,COACH,300701,2008
+NED,Netherlands,Leo Beenhakker,COACH,300701,2008
+CZE,Czechia,Karel Brückner,COACH,300699,2008
+TUR,Türkiye,Fatih Terim,COACH,300699,2008
+BRA,Brazil,Luiz Felipe Scolari,COACH,300698,2008
+SUI,Switzerland,Jakob Kuhn,COACH,300698,2008
+NED,Netherlands,Guus Hiddink,COACH,300696,2008
+GER,Germany,Otto-Heinz Rehhagel,COACH,300696,2008
+ESP,Spain,Luis Aragonés Suárez,COACH,300697,2008
+SWE,Sweden,Lars Lagerbäck,COACH,300697,2008
+FRA,France,Raymond Domenech,COACH,300694,2008
+NED,Netherlands,Marco van Basten,COACH,300694,2008
+ROU,Romania,Victor Piturca,COACH,300695,2008
+ITA,Italy,Roberto Donadoni,COACH,300695,2008
+NED,Netherlands,Leo Beenhakker,COACH,300692,2008
+AUT,Austria,Josef Hickersberger,COACH,300692,2008
+GER,Germany,Joachim Löw,COACH,300693,2008
+CRO,Croatia,Slaven Bilić,COACH,300693,2008
+TUR,Türkiye,Fatih Terim,COACH,300690,2008
+SUI,Switzerland,Jakob Kuhn,COACH,300690,2008
+BRA,Brazil,Luiz Felipe Scolari,COACH,300691,2008
+CZE,Czechia,Karel Brückner,COACH,300691,2008
+SWE,Sweden,Lars Lagerbäck,COACH,300688,2008
+GER,Germany,Otto-Heinz Rehhagel,COACH,300688,2008
+NED,Netherlands,Guus Hiddink,COACH,300689,2008
+ESP,Spain,Luis Aragonés Suárez,COACH,300689,2008
+ITA,Italy,Roberto Donadoni,COACH,300686,2008
+NED,Netherlands,Marco van Basten,COACH,300686,2008
+FRA,France,Raymond Domenech,COACH,300687,2008
+ROU,Romania,Victor Piturca,COACH,300687,2008
+NED,Netherlands,Leo Beenhakker,COACH,300685,2008
+GER,Germany,Joachim Löw,COACH,300685,2008
+CRO,Croatia,Slaven Bilić,COACH,300684,2008
+AUT,Austria,Josef Hickersberger,COACH,300684,2008
+TUR,Türkiye,Fatih Terim,COACH,300683,2008
+BRA,Brazil,Luiz Felipe Scolari,COACH,300683,2008
+CZE,Czechia,Karel Brückner,COACH,300682,2008
+SUI,Switzerland,Jakob Kuhn,COACH,300682,2008
+ITA,Italy,Cesare Prandelli,COACH,2003351,2012
+ESP,Spain,Vicente del Bosque,COACH,2003351,2012
+ITA,Italy,Cesare Prandelli,COACH,2003379,2012
+GER,Germany,Joachim Löw,COACH,2003379,2012
+ITA,Italy,Cesare Prandelli,COACH,2003346,2012
+ENG,England,Roy Hodgson,COACH,2003346,2012
+FRA,France,Laurent Blanc,COACH,2003345,2012
+ESP,Spain,Vicente del Bosque,COACH,2003345,2012
+POR,Portugal,Fernando Santos,COACH,2003344,2012
+GER,Germany,Joachim Löw,COACH,2003344,2012
+POR,Portugal,Paulo Bento,COACH,2003343,2012
+CZE,Czechia,Michal Bílek,COACH,2003343,2012
+FRA,France,Laurent Blanc,COACH,2003341,2012
+SWE,Sweden,Erik Hamrén,COACH,2003341,2012
+UKR,Ukraine,Oleh Blokhin,COACH,2003342,2012
+ENG,England,Roy Hodgson,COACH,2003342,2012
+ITA,Italy,Giovanni Trapattoni,COACH,2003340,2012
+ITA,Italy,Cesare Prandelli,COACH,2003340,2012
+ESP,Spain,Vicente del Bosque,COACH,2003339,2012
+CRO,Croatia,Slaven Bilić,COACH,2003339,2012
+GER,Germany,Joachim Löw,COACH,2003338,2012
+DEN,Denmark,Morten Olsen,COACH,2003338,2012
+NED,Netherlands,Bert van Marwijk,COACH,2003337,2012
+POR,Portugal,Paulo Bento,COACH,2003337,2012
+NED,Netherlands,Dick Advocaat,COACH,2003335,2012
+POR,Portugal,Fernando Santos,COACH,2003335,2012
+POL,Poland,Franciszek Smuda,COACH,2003336,2012
+CZE,Czechia,Michal Bílek,COACH,2003336,2012
+ENG,England,Roy Hodgson,COACH,2003333,2012
+SWE,Sweden,Erik Hamrén,COACH,2003333,2012
+FRA,France,Laurent Blanc,COACH,2003334,2012
+UKR,Ukraine,Oleh Blokhin,COACH,2003334,2012
+ITA,Italy,Giovanni Trapattoni,COACH,2003332,2012
+ESP,Spain,Vicente del Bosque,COACH,2003332,2012
+CRO,Croatia,Slaven Bilić,COACH,2003331,2012
+ITA,Italy,Cesare Prandelli,COACH,2003331,2012
+GER,Germany,Joachim Löw,COACH,2003329,2012
+NED,Netherlands,Bert van Marwijk,COACH,2003329,2012
+POR,Portugal,Paulo Bento,COACH,2003330,2012
+DEN,Denmark,Morten Olsen,COACH,2003330,2012
+NED,Netherlands,Dick Advocaat,COACH,2003327,2012
+POL,Poland,Franciszek Smuda,COACH,2003327,2012
+CZE,Czechia,Michal Bílek,COACH,2003328,2012
+POR,Portugal,Fernando Santos,COACH,2003328,2012
+SWE,Sweden,Erik Hamrén,COACH,2003325,2012
+UKR,Ukraine,Oleh Blokhin,COACH,2003325,2012
+ENG,England,Roy Hodgson,COACH,2003326,2012
+FRA,France,Laurent Blanc,COACH,2003326,2012
+CRO,Croatia,Slaven Bilić,COACH,2003324,2012
+ITA,Italy,Giovanni Trapattoni,COACH,2003324,2012
+ITA,Italy,Cesare Prandelli,COACH,2003323,2012
+ESP,Spain,Vicente del Bosque,COACH,2003323,2012
+POR,Portugal,Paulo Bento,COACH,2003322,2012
+GER,Germany,Joachim Löw,COACH,2003322,2012
+DEN,Denmark,Morten Olsen,COACH,2003321,2012
+NED,Netherlands,Bert van Marwijk,COACH,2003321,2012
+CZE,Czechia,Michal Bílek,COACH,2003320,2012
+NED,Netherlands,Dick Advocaat,COACH,2003320,2012
+POR,Portugal,Fernando Santos,COACH,2003319,2012
+POL,Poland,Franciszek Smuda,COACH,2003319,2012
+FRA,France,Didier Deschamps,COACH,2017907,2016
+POR,Portugal,Fernando Santos,COACH,2017907,2016
+FRA,France,Didier Deschamps,COACH,2017906,2016
+GER,Germany,Joachim Löw,COACH,2017906,2016
+WAL,Wales,Chris Coleman,COACH,2017905,2016
+POR,Portugal,Fernando Santos,COACH,2017905,2016
+SWE,Sweden,Lars Lagerbäck,COACH,2017904,2016
+FRA,France,Didier Deschamps,COACH,2017904,2016
+ITA,Italy,Antonio Conte,COACH,2017903,2016
+GER,Germany,Joachim Löw,COACH,2017903,2016
+BEL,Belgium,Marc Wilmots,COACH,2017902,2016
+WAL,Wales,Chris Coleman,COACH,2017902,2016
+POR,Portugal,Fernando Santos,COACH,2017901,2016
+POL,Poland,Adam Nawalka,COACH,2017901,2016
+SWE,Sweden,Lars Lagerbäck,COACH,2018003,2016
+ENG,England,Roy Hodgson,COACH,2018003,2016
+ESP,Spain,Vicente del Bosque,COACH,2018002,2016
+ITA,Italy,Antonio Conte,COACH,2018002,2016
+BEL,Belgium,Marc Wilmots,COACH,2018001,2016
+GER,Germany,Bernd Storck,COACH,2018001,2016
+SVK,Slovakia,Ján Kozák,COACH,2018000,2016
+GER,Germany,Joachim Löw,COACH,2018000,2016
+NIR,Northern Ireland,Martin O'Neill,COACH,2017999,2016
+FRA,France,Didier Deschamps,COACH,2017999,2016
+POR,Portugal,Fernando Santos,COACH,2017998,2016
+CRO,Croatia,Ante Čačić,COACH,2017998,2016
+NIR,Northern Ireland,Michael O'Neill,COACH,2017997,2016
+WAL,Wales,Chris Coleman,COACH,2017997,2016
+POL,Poland,Adam Nawalka,COACH,2017996,2016
+SUI,Switzerland,Vladimir Petković,COACH,2017996,2016
+BEL,Belgium,Marc Wilmots,COACH,2017957,2016
+SWE,Sweden,Erik Hamrén,COACH,2017957,2016
+NIR,Northern Ireland,Martin O'Neill,COACH,2017958,2016
+ITA,Italy,Antonio Conte,COACH,2017958,2016
+POR,Portugal,Fernando Santos,COACH,2017964,2016
+GER,Germany,Bernd Storck,COACH,2017964,2016
+SUI,Switzerland,Marcel Koller,COACH,2017963,2016
+SWE,Sweden,Lars Lagerbäck,COACH,2017963,2016
+ESP,Spain,Vicente del Bosque,COACH,2017899,2016
+CRO,Croatia,Ante Čačić,COACH,2017899,2016
+TUR,Türkiye,Fatih Terim,COACH,2017900,2016
+CZE,Czechia,Pavel Vrba,COACH,2017900,2016
+GER,Germany,Joachim Löw,COACH,2017897,2016
+NIR,Northern Ireland,Michael O'Neill,COACH,2017897,2016
+POL,Poland,Adam Nawalka,COACH,2017898,2016
+UKR,Ukraine,Mykhailo Fomenko,COACH,2017898,2016
+ENG,England,Roy Hodgson,COACH,2017895,2016
+SVK,Slovakia,Ján Kozák,COACH,2017895,2016
+WAL,Wales,Chris Coleman,COACH,2017896,2016
+RUS,Russia,Leonid Slutski,COACH,2017896,2016
+FRA,France,Didier Deschamps,COACH,2017893,2016
+SUI,Switzerland,Vladimir Petković,COACH,2017893,2016
+ITA,Italy,Giovanni de Biasi,COACH,2017894,2016
+ROU,Romania,Anghel Iordănescu,COACH,2017894,2016
+SUI,Switzerland,Marcel Koller,COACH,2017961,2016
+POR,Portugal,Fernando Santos,COACH,2017961,2016
+GER,Germany,Bernd Storck,COACH,2017962,2016
+SWE,Sweden,Lars Lagerbäck,COACH,2017962,2016
+NIR,Northern Ireland,Martin O'Neill,COACH,2017955,2016
+BEL,Belgium,Marc Wilmots,COACH,2017955,2016
+TUR,Türkiye,Fatih Terim,COACH,2017891,2016
+ESP,Spain,Vicente del Bosque,COACH,2017891,2016
+CRO,Croatia,Ante Čačić,COACH,2017892,2016
+CZE,Czechia,Pavel Vrba,COACH,2017892,2016
+SWE,Sweden,Erik Hamrén,COACH,2017956,2016
+ITA,Italy,Antonio Conte,COACH,2017956,2016
+POL,Poland,Adam Nawalka,COACH,2017889,2016
+GER,Germany,Joachim Löw,COACH,2017889,2016
+NIR,Northern Ireland,Michael O'Neill,COACH,2017890,2016
+UKR,Ukraine,Mykhailo Fomenko,COACH,2017890,2016
+WAL,Wales,Chris Coleman,COACH,2017887,2016
+ENG,England,Roy Hodgson,COACH,2017887,2016
+ITA,Italy,Giovanni de Biasi,COACH,2017885,2016
+FRA,France,Didier Deschamps,COACH,2017885,2016
+SUI,Switzerland,Vladimir Petković,COACH,2017886,2016
+ROU,Romania,Anghel Iordănescu,COACH,2017886,2016
+SVK,Slovakia,Ján Kozák,COACH,2017888,2016
+RUS,Russia,Leonid Slutski,COACH,2017888,2016
+SWE,Sweden,Lars Lagerbäck,COACH,2017959,2016
+POR,Portugal,Fernando Santos,COACH,2017959,2016
+GER,Germany,Bernd Storck,COACH,2017960,2016
+SUI,Switzerland,Marcel Koller,COACH,2017960,2016
+ITA,Italy,Antonio Conte,COACH,2017953,2016
+BEL,Belgium,Marc Wilmots,COACH,2017953,2016
+SWE,Sweden,Erik Hamrén,COACH,2017954,2016
+NIR,Northern Ireland,Martin O'Neill,COACH,2017954,2016
+CZE,Czechia,Pavel Vrba,COACH,2017883,2016
+ESP,Spain,Vicente del Bosque,COACH,2017883,2016
+UKR,Ukraine,Mykhailo Fomenko,COACH,2017881,2016
+GER,Germany,Joachim Löw,COACH,2017881,2016
+NIR,Northern Ireland,Michael O'Neill,COACH,2017882,2016
+POL,Poland,Adam Nawalka,COACH,2017882,2016
+CRO,Croatia,Ante Čačić,COACH,2017884,2016
+TUR,Türkiye,Fatih Terim,COACH,2017884,2016
+RUS,Russia,Leonid Slutski,COACH,2017879,2016
+ENG,England,Roy Hodgson,COACH,2017879,2016
+SVK,Slovakia,Ján Kozák,COACH,2017880,2016
+WAL,Wales,Chris Coleman,COACH,2017880,2016
+SUI,Switzerland,Vladimir Petković,COACH,2017878,2016
+ITA,Italy,Giovanni de Biasi,COACH,2017878,2016
+ROU,Romania,Anghel Iordănescu,COACH,2017877,2016
+FRA,France,Didier Deschamps,COACH,2017877,2016
+ENG,England,Gareth Southgate,COACH,2024491,2020
+ITA,Italy,Roberto Mancini,COACH,2024491,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024490,2020
+ENG,England,Gareth Southgate,COACH,2024490,2020
+ESP,Spain,Luis Enrique,COACH,2024489,2020
+ITA,Italy,Roberto Mancini,COACH,2024489,2020
+ENG,England,Gareth Southgate,COACH,2024487,2020
+UKR,Ukraine,Andriy Shevchenko,COACH,2024487,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024488,2020
+CZE,Czechia,Jaroslav Šilhavý,COACH,2024488,2020
+ITA,Italy,Roberto Mancini,COACH,2024486,2020
+ESP,Spain,Roberto Martínez,COACH,2024486,2020
+ESP,Spain,Luis Enrique,COACH,2024485,2020
+SUI,Switzerland,Vladimir Petković,COACH,2024485,2020
+UKR,Ukraine,Andriy Shevchenko,COACH,2024483,2020
+SWE,Sweden,Jan Andersson,COACH,2024483,2020
+GER,Germany,Joachim Löw,COACH,2024484,2020
+ENG,England,Gareth Southgate,COACH,2024484,2020
+SUI,Switzerland,Vladimir Petković,COACH,2024481,2020
+FRA,France,Didier Deschamps,COACH,2024481,2020
+ESP,Spain,Luis Enrique,COACH,2024482,2020
+CRO,Croatia,Zlatko Dalić,COACH,2024482,2020
+POR,Portugal,Fernando Santos,COACH,2024479,2020
+ESP,Spain,Roberto Martínez,COACH,2024479,2020
+CZE,Czechia,Jaroslav Šilhavý,COACH,2024480,2020
+NED,Netherlands,Frank de Boer,COACH,2024480,2020
+GER,Germany,Franco Foda,COACH,2024477,2020
+ITA,Italy,Roberto Mancini,COACH,2024477,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024478,2020
+WAL,Wales,Rob Page,COACH,2024478,2020
+ITA,Italy,Marco Rossi,COACH,2024475,2020
+GER,Germany,Joachim Löw,COACH,2024475,2020
+FRA,France,Didier Deschamps,COACH,2024476,2020
+POR,Portugal,Fernando Santos,COACH,2024476,2020
+POR,Portugal,Paulo Sousa,COACH,2024474,2020
+SWE,Sweden,Jan Andersson,COACH,2024474,2020
+ESP,Spain,Luis Enrique,COACH,2024473,2020
+SVK,Slovakia,Štefan Tarkovič,COACH,2024473,2020
+ENG,England,Gareth Southgate,COACH,2024471,2020
+CZE,Czechia,Jaroslav Šilhavý,COACH,2024471,2020
+SCO,Scotland,Steve Clarke,COACH,2024472,2020
+CRO,Croatia,Zlatko Dalić,COACH,2024472,2020
+ESP,Spain,Roberto Martínez,COACH,2024470,2020
+FIN,Finland,Markku Kanerva,COACH,2024470,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024469,2020
+RUS,Russia,Stanislav Cherchesov,COACH,2024469,2020
+GER,Germany,Franco Foda,COACH,2024446,2020
+UKR,Ukraine,Andriy Shevchenko,COACH,2024446,2020
+NED,Netherlands,Frank de Boer,COACH,2024445,2020
+MKD,North Macedonia,Igor Angelovski,COACH,2024445,2020
+WAL,Wales,Rob Page,COACH,2024468,2020
+ITA,Italy,Roberto Mancini,COACH,2024468,2020
+TUR,Türkiye,Şenol Güneş,COACH,2024467,2020
+SUI,Switzerland,Vladimir Petković,COACH,2024467,2020
+POR,Portugal,Paulo Sousa,COACH,2024463,2020
+ESP,Spain,Luis Enrique,COACH,2024463,2020
+GER,Germany,Joachim Löw,COACH,2024466,2020
+POR,Portugal,Fernando Santos,COACH,2024466,2020
+FRA,France,Didier Deschamps,COACH,2024465,2020
+ITA,Italy,Marco Rossi,COACH,2024465,2020
+SCO,Scotland,Steve Clarke,COACH,2024461,2020
+ENG,England,Gareth Southgate,COACH,2024461,2020
+CZE,Czechia,Jaroslav Šilhavý,COACH,2024462,2020
+CRO,Croatia,Zlatko Dalić,COACH,2024462,2020
+SVK,Slovakia,Štefan Tarkovič,COACH,2024464,2020
+SWE,Sweden,Jan Andersson,COACH,2024464,2020
+GER,Germany,Franco Foda,COACH,2024443,2020
+NED,Netherlands,Frank de Boer,COACH,2024443,2020
+ESP,Spain,Roberto Martínez,COACH,2024459,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024459,2020
+MKD,North Macedonia,Igor Angelovski,COACH,2024444,2020
+UKR,Ukraine,Andriy Shevchenko,COACH,2024444,2020
+SUI,Switzerland,Vladimir Petković,COACH,2024458,2020
+ITA,Italy,Roberto Mancini,COACH,2024458,2020
+WAL,Wales,Rob Page,COACH,2024457,2020
+TUR,Türkiye,Şenol Güneş,COACH,2024457,2020
+RUS,Russia,Stanislav Cherchesov,COACH,2024460,2020
+FIN,Finland,Markku Kanerva,COACH,2024460,2020
+GER,Germany,Joachim Löw,COACH,2024456,2020
+FRA,France,Didier Deschamps,COACH,2024456,2020
+POR,Portugal,Fernando Santos,COACH,2024455,2020
+ITA,Italy,Marco Rossi,COACH,2024455,2020
+SWE,Sweden,Jan Andersson,COACH,2024453,2020
+ESP,Spain,Luis Enrique,COACH,2024453,2020
+SVK,Slovakia,Štefan Tarkovič,COACH,2024454,2020
+POR,Portugal,Paulo Sousa,COACH,2024454,2020
+CZE,Czechia,Jaroslav Šilhavý,COACH,2024452,2020
+SCO,Scotland,Steve Clarke,COACH,2024452,2020
+UKR,Ukraine,Andriy Shevchenko,COACH,2024441,2020
+NED,Netherlands,Frank de Boer,COACH,2024441,2020
+MKD,North Macedonia,Igor Angelovski,COACH,2024442,2020
+GER,Germany,Franco Foda,COACH,2024442,2020
+CRO,Croatia,Zlatko Dalić,COACH,2024451,2020
+ENG,England,Gareth Southgate,COACH,2024451,2020
+RUS,Russia,Stanislav Cherchesov,COACH,2024450,2020
+ESP,Spain,Roberto Martínez,COACH,2024450,2020
+FIN,Finland,Markku Kanerva,COACH,2024449,2020
+DEN,Denmark,Kasper Hjulmand,COACH,2024449,2020
+SUI,Switzerland,Vladimir Petković,COACH,2024448,2020
+WAL,Wales,Rob Page,COACH,2024448,2020
+ITA,Italy,Roberto Mancini,COACH,2024447,2020
+TUR,Türkiye,Şenol Güneş,COACH,2024447,2020
+ITA,Italy,Marco Rossi,COACH,2036173,2024
+GER,Germany,Julian Nagelsmann,COACH,2036173,2024
+ESP,Spain,Sylvinho,COACH,2036176,2024
+CRO,Croatia,Zlatko Dalić,COACH,2036176,2024
+CZE,Czechia,Ivan Hašek,COACH,2036172,2024
+ESP,Spain,Roberto Martínez,COACH,2036172,2024
+FRA,France,Willy Sagnol,COACH,2036171,2024
+ITA,Italy,Vincenzo Montella,COACH,2036171,2024
+FRA,France,Didier Deschamps,COACH,2036168,2024
+GER,Germany,Ralf Rangnick,COACH,2036168,2024
+ITA,Italy,Francesco Calzona,COACH,2036169,2024
+GER,Germany,Domenico Tedesco,COACH,2036169,2024
+UKR,Ukraine,Serhiy Rebrov,COACH,2036170,2024
+ROU,Romania,Edward Iordănescu,COACH,2036170,2024
+ENG,England,Gareth Southgate,COACH,2036166,2024
+SRB,Serbia,Dragan Stojković,COACH,2036166,2024
+DEN,Denmark,Kasper Hjulmand,COACH,2036165,2024
+SVN,Slovenia,Matjaž Kek,COACH,2036165,2024
+NED,Netherlands,Ronald Koeman,COACH,2036167,2024
+POL,Poland,Michał Probierz,COACH,2036167,2024
+ESP,Spain,Sylvinho,COACH,2036164,2024
+ITA,Italy,Luciano Spalletti,COACH,2036164,2024
+CRO,Croatia,Zlatko Dalić,COACH,2036163,2024
+ESP,Spain,Luis de la Fuente,COACH,2036163,2024
+SUI,Switzerland,Murat Yakin,COACH,2036162,2024
+ITA,Italy,Marco Rossi,COACH,2036162,2024
+SCO,Scotland,Steve Clarke,COACH,2036161,2024
+GER,Germany,Julian Nagelsmann,COACH,2036161,2024
