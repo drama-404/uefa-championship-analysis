@@ -1,3 +1,4 @@
+
 // Load both CSV files and create the timeline
 Promise.all([
     d3.csv("first_participation.csv"),
@@ -14,13 +15,6 @@ Promise.all([
     });
     createTimeline(participationData, tournamentWinners);
 });
-
-function hideTooltip() {
-    if (activeTooltip) {
-        activeTooltip.remove();
-        activeTooltip = null;
-    }
-}
 
 function createTimeline(data, tournamentWinners) {
     const width = document.getElementById('timeline-container').offsetWidth;
@@ -47,6 +41,7 @@ function createTimeline(data, tournamentWinners) {
     }));
 
     let activeTooltip = null;
+    let animationStarted = false;
 
     d3.select("#timeline-container").selectAll("*").remove();
 
@@ -54,6 +49,74 @@ function createTimeline(data, tournamentWinners) {
         .append("svg")
         .attr("width", width)
         .attr("height", height);
+
+    // Add title
+    svg.append("text")
+        .attr("class", "title")
+        .attr("x", margin.left)
+        .attr("y", margin.top - 100)
+        .text("UEFA EURO Championship Timeline");
+
+    // Add subtitle
+    svg.append("text")
+        .attr("class", "subtitle")
+        .attr("x", margin.left)
+        .attr("y", margin.top - 70)
+        .text("The Evolution of European Football");
+
+    // Add description
+    const description = svg.append("g")
+        .attr("transform", `translate(${margin.left}, ${margin.top - 40})`);
+
+    description.append("text")
+        .attr("class", "description")
+        .attr("y", 0)
+        .text("This timeline showcases the first appearances of countries");
+
+    description.append("text")
+        .attr("class", "description")
+        .attr("y", 20)
+        .text("in the UEFA EURO Championship from 1960 to 2024.");
+
+    // Add hint
+    const hint = svg.append("g")
+        .attr("transform", `translate(${width - margin.right}, ${margin.top - 100})`)
+        .attr("text-anchor", "end");
+
+    hint.append("text")
+        .attr("class", "hint")
+        .attr("y", 0)
+        .text("🖱️ Hover/click for more info");
+
+    hint.append("text")
+        .attr("class", "hint")
+        .attr("y", 20)
+        .text("on years and countries");
+
+
+    // Create start button
+    const startButton = d3.select("#start-button")
+        .append("button")
+        .text("Start")
+        .style("font-size", "20px")
+        .style("padding", "10px 20px")
+        .on("click", function () {
+            d3.select(this).style("display", "none");
+            animationStarted = true;
+            animateLine();
+        });
+
+    // Create replay button (initially hidden)
+    const replayButton = d3.select("#replay-button")
+        .append("button")
+        .text("Replay")
+        .style("font-size", "16px")
+        .style("padding", "5px 10px")
+        .style("display", "none")
+        .on("click", function () {
+            d3.select(this).style("display", "none");
+            resetAndAnimate();
+        });
 
     const x = d3.scaleLinear()
         .domain(d3.extent(preparedData, d => d.year))
@@ -80,7 +143,7 @@ function createTimeline(data, tournamentWinners) {
     expansionLines.append("line")
         .attr("y1", height / 2 - height * 0.3)
         .attr("y2", height / 2 + height * 0.3)
-        .attr("stroke", "#6cc607")
+        .attr("stroke", "#779dd2")
         .attr("stroke-width", 3)
         .attr("stroke-dasharray", "5,5");
 
@@ -90,7 +153,7 @@ function createTimeline(data, tournamentWinners) {
         .attr("text-anchor", "middle")
         .attr("font-size", fontSize)
         .attr("font-weight", "bold")
-        .attr("fill", "#6cc607");
+        .attr("fill", "#779dd2");
 
     const events = svg.selectAll(".event")
         .data(preparedData)
@@ -123,18 +186,16 @@ function createTimeline(data, tournamentWinners) {
         .style("opacity", 0)
         .style("paint-order", "stroke")
         .style("stroke", "white")
-        .style("stroke-width", "4px")
+        .style("stroke-width", "3px")
         .style("fill", "black");
 
-    // // Add hover functionality to events
-    // events.on("mouseover", function (event, d) {
-    //     showYearTooltip(d, event.pageX, event.pageY);
-    // }).on("mouseout", hideTooltip);
-
     events.on("mouseover", function (event, d) {
-        showYearTooltip(d, event.pageX, event.pageY);
+        if (animationStarted) {
+            showYearTooltip(d, event.pageX, event.pageY);
+        }
+
     }).on("mouseout", function () {
-        if (!activeTooltip || !activeTooltip.classed('country-tooltip')) {
+        if ((!activeTooltip || !activeTooltip.classed('country-tooltip')) && animationStarted) {
             hideTooltip();
         }
     });
@@ -181,54 +242,23 @@ function createTimeline(data, tournamentWinners) {
         .style("opacity", 0)
         .style("paint-order", "stroke")
         .style("stroke", "white")
-        .style("stroke-width", "4px")
-        .style("fill", "black");
+        .style("stroke-width", "1px")
+        .style("fill", "white");
 
     countryGroups.selectAll(".country-item")
         .on("mouseover", function (event, d) {
-            event.stopPropagation();
-            showCountryTooltip(d, event.pageX, event.pageY);
+            if (animationStarted) {
+                event.stopPropagation();
+                showCountryTooltip(d, event.pageX, event.pageY);
+            }
+
         })
         .on("mouseout", function (event) {
             // Only hide the tooltip if we're not entering another country item
-            if (!event.relatedTarget || !d3.select(event.relatedTarget).classed('country-item')) {
+            if ((!event.relatedTarget || !d3.select(event.relatedTarget).classed('country-item')) && animationStarted) {
                 hideTooltip();
             }
         });
-
-    // function showYearTooltip(data, x, y) {
-    //     const winner = tournamentWinners[data.year];
-    //     const tooltip = d3.select('body').append('div')
-    //         .attr('class', 'tooltip')
-    //         .style('left', `${x + 10}px`)
-    //         .style('top', `${y - 10}px`);
-
-    //     tooltip.html(`
-    //             <strong>${data.year}</strong><br>
-    //             Winner: ${winner.winner}<br>
-    //             Runner-up: ${winner.runnerUp}<br>
-    //             Score: ${winner.score}<br>
-    //             Participants: ${winner.totalParticipants}
-    //         `);
-    // }
-
-    // function showCountryTooltip(data, x, y) {
-    //     const tooltip = d3.select('body').append('div')
-    //         .attr('class', 'tooltip')
-    //         .style('left', `${x + 10}px`)
-    //         .style('top', `${y - 10}px`);
-
-    //     tooltip.html(`
-    //             <strong>${data.team}</strong><br>
-    //             Total Participations: ${data.total_participations}<br>
-    //             Wins: ${data.total_wins}<br>
-    //             Final Appearances: ${data.final_appearances}
-    //         `);
-    // }
-
-    // function hideTooltip() {
-    //     d3.select('.tooltip').remove();
-    // }
 
     function showYearTooltip(data, x, y) {
         if (activeTooltip && activeTooltip.classed('country-tooltip')) return;
@@ -242,15 +272,17 @@ function createTimeline(data, tournamentWinners) {
             .style('z-index', 1000);
 
         tooltip.html(`
-            <strong>${data.year}</strong><br>
-            Winner: ${winner.winner}<br>
-            Runner-up: ${winner.runnerUp}<br>
-            Score: ${winner.score}<br>
-            Participants: ${winner.totalParticipants}
-        `);
+        <strong style="font-size: 14px;">${data.year}</strong><br>
+        <hr>
+        <span style="font-weight: bold;">Winner:</span> ${winner.winner}<br>
+        <span style="font-weight: bold;">Runner-up:</span> ${winner.runnerUp}<br>
+        <span style="font-weight: bold;">Score:</span> ${winner.score}<br>
+        <span style="font-weight: bold;">Participants:</span> ${winner.totalParticipants}
+    `);
 
         activeTooltip = tooltip;
     }
+
 
     function showCountryTooltip(data, x, y) {
         hideTooltip();
@@ -261,11 +293,12 @@ function createTimeline(data, tournamentWinners) {
             .style('z-index', 1001);
 
         tooltip.html(`
-            <strong>${data.team}</strong><br>
-            Total Participations: ${data.total_participations}<br>
-            Wins: ${data.total_wins}<br>
-            Final Appearances: ${data.final_appearances}
-        `);
+        <strong style="font-size: 14px;">${data.team}</strong><br>
+        <hr>
+        <span style="font-weight: bold;">Total Participations:</span> ${data.total_participations}<br>
+        <span style="font-weight: bold;">Wins:</span> ${data.total_wins}<br>
+        <span style="font-weight: bold;">Final Appearances:</span> ${data.final_appearances}
+    `);
 
         activeTooltip = tooltip;
     }
@@ -277,19 +310,43 @@ function createTimeline(data, tournamentWinners) {
         }
     }
 
+    function resetAndAnimate() {
+        animationStarted = false;
+        // Reset the timeline
+        line.attr("x2", margin.left);
+        events.style("opacity", 0);
+        events.select(".country-tick")
+            .attr("y1", 0)
+            .attr("y2", 0);
+        events.select(".year-text").style("opacity", 0);
+        countryGroups.selectAll(".country-item image").style("opacity", 0);
+        countryGroups.selectAll(".country-item text").style("opacity", 0);
+        expansionLines.style("opacity", 0);
+
+        // Start the animation
+        animateLine();
+    }
+
     function animateLine() {
+        animationStarted = true;
         const events = d3.selectAll('.event').nodes();
         let currentIndex = 0;
 
         function animateNextEvent() {
-            if (currentIndex >= events.length) return;
+
+            // Check if animation is complete
+            if (currentIndex >= events.length) {
+                // Show replay button
+                replayButton.style("display", "block");
+                return;
+            }
 
             const event = d3.select(events[currentIndex]);
             const eventData = event.datum();
             const eventX = x(eventData.year);
             const nextEventX = currentIndex < events.length - 1 ? x(d3.select(events[currentIndex + 1]).datum().year) : width - margin.right;
 
-            const totalAnimationDuration = 1000; // Adjust this value to control the overall speed
+            const totalAnimationDuration = 800; // Adjust this value to control the overall speed
 
             // Grow main line to the next event
             line.transition()
@@ -352,25 +409,28 @@ function createTimeline(data, tournamentWinners) {
         animateNextEvent();
     }
 
-    animateLine();
+    // // Don't automatically start the animation
+    // // The animation will start when the Start button is clicked
+    // animateLine();
 }
 
 // Handle window resize
-window.addEventListener('resize', () => {
-    // Load both CSV files and create the timeline
-    Promise.all([
-        d3.csv("first_participation.csv"),
-        d3.csv("tournament_winners.csv")
-    ]).then(function ([participationData, winnersData]) {
-        const tournamentWinners = {};
-        winnersData.forEach(d => {
-            tournamentWinners[d.year] = {
-                winner: d.winner,
-                runnerUp: d.runnerUp,
-                score: d.score,
-                totalParticipants: +d.totalParticipants
-            };
-        });
-        createTimeline(participationData, tournamentWinners);
-    });
-});
+// window.addEventListener('resize', () => {
+//     // Load both CSV files and create the timeline
+//     Promise.all([
+//         d3.csv("first_participation.csv"),
+//         d3.csv("tournament_winners.csv")
+//     ]).then(function ([participationData, winnersData]) {
+//         const tournamentWinners = {};
+//         winnersData.forEach(d => {
+//             tournamentWinners[d.year] = {
+//                 winner: d.winner,
+//                 runnerUp: d.runnerUp,
+//                 score: d.score,
+//                 totalParticipants: +d.totalParticipants
+//             };
+//         });
+//         createTimeline(participationData, tournamentWinners);
+//     });
+// });
+// });
