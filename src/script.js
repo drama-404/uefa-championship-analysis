@@ -1,4 +1,3 @@
-
 // Load both CSV files and create the timeline
 Promise.all([
     d3.csv("first_participation.csv"),
@@ -13,17 +12,58 @@ Promise.all([
             totalParticipants: +d.totalParticipants
         };
     });
-    createTimeline(participationData, tournamentWinners);
+
+    // Check if we're in a Jupyter environment
+    if (window.Jupyter) {
+        window.Jupyter.notebook.events.on("kernel_ready.Kernel", function () {
+            createTimeline(participationData, tournamentWinners);
+        });
+    } else {
+        // If not in Jupyter, just call createTimeline directly
+        createTimeline(participationData, tournamentWinners);
+    }
+
+
 });
 
 function createTimeline(data, tournamentWinners) {
-    const width = document.getElementById('timeline-container').offsetWidth;
-    const height = 600;
+
+    const containerEl = document.getElementById('timeline-container');
+
+    const availableWidth = containerEl.offsetWidth;
+    const availableHeight = containerEl.offsetHeight;
+    const minWidth = 800;
+    const minHeight = 600;
+    let width = Math.max(minWidth, availableWidth);
+    let height = Math.max(minHeight, availableHeight);
+
+    // Adjust for aspect ratio
+    const aspectRatio = 16 / 9;
+    if (width / height > aspectRatio) {
+        width = height * aspectRatio;
+    } else {
+        height = width / aspectRatio;
+    }
+
     const margin = { top: 150, right: 50, bottom: 150, left: 50 };
     const fontSize = 14;
     const lineHeight = 1.5;
     const lineHeightPx = 20;
     const singleTickHeight = 40;
+
+    const startYear = Math.min(...Object.keys(tournamentWinners).map(Number));
+    const endYear = 2024;
+    const years = Array.from({ length: endYear - startYear + 1 }, (_, i) => startYear + i);
+    const totalYears = years.length - 1;
+
+    // Calculate the width of each year segment
+    const yearWidth = (width - margin.left - margin.right) / totalYears;
+
+    // Create a custom scale function using yearWidth
+    function customXScale(year) {
+        const yearIndex = year - startYear;
+        return margin.left + yearIndex * yearWidth;
+    }
 
     // Add expansion years data
     const expansionYears = [
@@ -35,15 +75,16 @@ function createTimeline(data, tournamentWinners) {
     // Group data by year
     const groupedData = d3.group(data, d => d.year);
     const preparedData = Array.from(groupedData, ([year, values]) => ({
-        year: +year,
+        year: year,
         teams: values,
         numberOfLines: values.length
     }));
 
-    let activeTooltip = null;
     let animationStarted = false;
 
-    d3.select("#timeline-container").selectAll("*").remove();
+    const container = d3.select("#timeline-container")
+    container.selectAll("*").remove();
+
 
     const svg = d3.select("#timeline-container")
         .append("svg")
@@ -93,10 +134,15 @@ function createTimeline(data, tournamentWinners) {
         .attr("y", 20)
         .text("on years and countries");
 
-
     // Create start button
-    const startButton = d3.select("#start-button")
-        .append("button")
+    const startButtonDiv = container.append("div")
+        .attr("id", "start-button")
+        .style("position", "absolute")
+        .style("top", "50%")
+        .style("left", "50%")
+        .style("transform", `translate(-50%, -50%)`);
+
+    const startButton = startButtonDiv.append("button")
         .text("Start")
         .style("font-size", "20px")
         .style("padding", "10px 20px")
@@ -107,8 +153,13 @@ function createTimeline(data, tournamentWinners) {
         });
 
     // Create replay button (initially hidden)
-    const replayButton = d3.select("#replay-button")
-        .append("button")
+    const replayButtonDiv = container.append("div")
+        .attr("id", "replay-button")
+        .style("position", "absolute")
+        .style("bottom", "20px")
+        .style("left", "20px");
+
+    const replayButton = replayButtonDiv.append("button")
         .text("Replay")
         .style("font-size", "16px")
         .style("padding", "5px 10px")
@@ -118,18 +169,14 @@ function createTimeline(data, tournamentWinners) {
             resetAndAnimate();
         });
 
-    const x = d3.scaleLinear()
-        .domain(d3.extent(preparedData, d => d.year))
-        .range([margin.left, width - margin.right]);
-
+    // Use customXScale instead of d3.scaleLinear
     const line = svg.append("line")
-        .attr("x1", margin.left)
+        .attr("x1", customXScale(startYear))
         .attr("y1", height / 2)
-        .attr("x2", margin.left)
+        .attr("x2", customXScale(startYear))
         .attr("y2", height / 2)
         .attr("stroke", "#FFD700")
-        .attr("stroke-width", 2)
-        ;
+        .attr("stroke-width", 2);
 
     // Add expansion year lines (initially hidden)
     const expansionLines = svg.selectAll(".expansion-line")
@@ -137,11 +184,11 @@ function createTimeline(data, tournamentWinners) {
         .enter()
         .append("g")
         .attr("class", "expansion-line")
-        .attr("transform", d => `translate(${x(d.year)}, 0)`)
+        .attr("transform", d => `translate(${customXScale(d.year)}, 0)`)
         .style("opacity", 0);
 
     expansionLines.append("line")
-        .attr("y1", height / 2 - height * 0.3)
+        .attr("y1", height / 2 - height * 0.25)
         .attr("y2", height / 2 + height * 0.3)
         .attr("stroke", "#779dd2")
         .attr("stroke-width", 3)
@@ -160,7 +207,7 @@ function createTimeline(data, tournamentWinners) {
         .enter()
         .append("g")
         .attr("class", "event")
-        .attr("transform", d => `translate(${x(d.year)}, ${height / 2})`)
+        .attr("transform", d => `translate(${customXScale(d.year)}, ${height / 2})`)
         .style("opacity", 0);
 
 
@@ -191,14 +238,10 @@ function createTimeline(data, tournamentWinners) {
 
     events.on("mouseover", function (event, d) {
         if (animationStarted) {
-            showYearTooltip(d, event.pageX, event.pageY);
+            const [x, y] = d3.pointer(event, svg.node());
+            showTooltip(d, x + 10, y - 10, false);
         }
-
-    }).on("mouseout", function () {
-        if ((!activeTooltip || !activeTooltip.classed('country-tooltip')) && animationStarted) {
-            hideTooltip();
-        }
-    });
+    }).on("mouseout", hideTooltip);
 
     const countryGroups = events.append("g")
         .attr("class", "country-group")
@@ -249,71 +292,64 @@ function createTimeline(data, tournamentWinners) {
         .on("mouseover", function (event, d) {
             if (animationStarted) {
                 event.stopPropagation();
-                showCountryTooltip(d, event.pageX, event.pageY);
+                const [x, y] = d3.pointer(event, svg.node());
+                showTooltip(d, x + 10, y - 10, true);
             }
-
         })
-        .on("mouseout", function (event) {
-            // Only hide the tooltip if we're not entering another country item
-            if ((!event.relatedTarget || !d3.select(event.relatedTarget).classed('country-item')) && animationStarted) {
-                hideTooltip();
-            }
-        });
+        .on("mouseout", hideTooltip);
 
-    function showYearTooltip(data, x, y) {
-        if (activeTooltip && activeTooltip.classed('country-tooltip')) return;
+    // Create a container for tooltips within the SVG
+    const tooltipContainer = svg.append("g")
+        .attr("class", "tooltip-container")
+        .style("opacity", 0);
 
-        hideTooltip();
-        const winner = tournamentWinners[data.year];
-        const tooltip = d3.select('body').append('div')
-            .attr('class', 'tooltip year-tooltip')
-            .style('left', `${x + 10}px`)
-            .style('top', `${y - 10}px`)
-            .style('z-index', 1000);
+    tooltipContainer.append("rect")
+        .attr("class", "tooltip-bg")
+        .attr("rx", 4)
+        .attr("ry", 4)
+        .attr("fill", "rgba(255, 255, 255, 0.9")
+        .attr("stroke", "#ccc");
 
-        tooltip.html(`
-        <strong style="font-size: 14px;">${data.year}</strong><br>
-        <hr>
-        <span style="font-weight: bold;">Winner:</span> ${winner.winner}<br>
-        <span style="font-weight: bold;">Runner-up:</span> ${winner.runnerUp}<br>
-        <span style="font-weight: bold;">Score:</span> ${winner.score}<br>
-        <span style="font-weight: bold;">Participants:</span> ${winner.totalParticipants}
-    `);
+    const tooltipText = tooltipContainer.append("text")
+        .attr("class", "tooltip-text")
+        .attr("x", 5)
+        .attr("y", 3);
 
-        activeTooltip = tooltip;
-    }
+    function showTooltip(d, x, y, isCountry) {
+        let content;
+        if (isCountry) {
+            content = `<tspan x="5" dy="1.2em" font-weight="bold">${d.team}</tspan>
+                        <tspan x="5" dy="1.2em">Total Participations: ${d.total_participations}</tspan>
+                        <tspan x="5" dy="1.2em">Wins: ${d.total_wins}</tspan>
+                        <tspan x="5" dy="1.2em">Final Appearances: ${d.final_appearances}</tspan>`;
+        } else {
+            const winner = tournamentWinners[d.year];
+            content = `<tspan x="5" dy="1.2em" font-weight="bold">${d.year}</tspan>
+                        <tspan x="5" dy="1.2em">Winner: ${winner.winner}</tspan>
+                        <tspan x="5" dy="1.2em">Runner-up: ${winner.runnerUp}</tspan>
+                        <tspan x="5" dy="1.2em">Score: ${winner.score}</tspan>
+                        <tspan x="5" dy="1.2em">Participants: ${winner.totalParticipants}</tspan>`;
+        }
 
+        tooltipText.html(content);
 
-    function showCountryTooltip(data, x, y) {
-        hideTooltip();
-        const tooltip = d3.select('body').append('div')
-            .attr('class', 'tooltip country-tooltip')
-            .style('left', `${x + 10}px`)
-            .style('top', `${y - 10}px`)
-            .style('z-index', 1001);
+        const bbox = tooltipText.node().getBBox();
+        tooltipContainer.select(".tooltip-bg")
+            .attr("width", bbox.width + 10)
+            .attr("height", bbox.height + 10);
 
-        tooltip.html(`
-        <strong style="font-size: 14px;">${data.team}</strong><br>
-        <hr>
-        <span style="font-weight: bold;">Total Participations:</span> ${data.total_participations}<br>
-        <span style="font-weight: bold;">Wins:</span> ${data.total_wins}<br>
-        <span style="font-weight: bold;">Final Appearances:</span> ${data.final_appearances}
-    `);
-
-        activeTooltip = tooltip;
+        tooltipContainer.attr("transform", `translate(${x},${y})`)
+            .transition().duration(200).style("opacity", 1);
     }
 
     function hideTooltip() {
-        if (activeTooltip) {
-            activeTooltip.remove();
-            activeTooltip = null;
-        }
+        tooltipContainer.transition().duration(200).style("opacity", 0);
     }
 
     function resetAndAnimate() {
         animationStarted = false;
         // Reset the timeline
-        line.attr("x2", margin.left);
+        line.attr("x2", customXScale(startYear));
         events.style("opacity", 0);
         events.select(".country-tick")
             .attr("y1", 0)
@@ -343,10 +379,12 @@ function createTimeline(data, tournamentWinners) {
 
             const event = d3.select(events[currentIndex]);
             const eventData = event.datum();
-            const eventX = x(eventData.year);
-            const nextEventX = currentIndex < events.length - 1 ? x(d3.select(events[currentIndex + 1]).datum().year) : width - margin.right;
+            const eventX = customXScale(eventData.year);
+            const nextEventX = currentIndex < events.length - 1 ?
+                customXScale(d3.select(events[currentIndex + 1]).datum().year) :
+                customXScale(endYear);
 
-            const totalAnimationDuration = 800; // Adjust this value to control the overall speed
+            const totalAnimationDuration = 800; // custom overall speed
 
             // Grow main line to the next event
             line.transition()
@@ -408,29 +446,32 @@ function createTimeline(data, tournamentWinners) {
         // Start the animation
         animateNextEvent();
     }
-
-    // // Don't automatically start the animation
-    // // The animation will start when the Start button is clicked
-    // animateLine();
 }
 
 // Handle window resize
-// window.addEventListener('resize', () => {
-//     // Load both CSV files and create the timeline
-//     Promise.all([
-//         d3.csv("first_participation.csv"),
-//         d3.csv("tournament_winners.csv")
-//     ]).then(function ([participationData, winnersData]) {
-//         const tournamentWinners = {};
-//         winnersData.forEach(d => {
-//             tournamentWinners[d.year] = {
-//                 winner: d.winner,
-//                 runnerUp: d.runnerUp,
-//                 score: d.score,
-//                 totalParticipants: +d.totalParticipants
-//             };
-//         });
-//         createTimeline(participationData, tournamentWinners);
-//     });
-// });
-// });
+window.addEventListener('resize', () => {
+    // Load both CSV files and create the timeline
+    Promise.all([
+        d3.csv("first_participation.csv"),
+        d3.csv("tournament_winners.csv")
+    ]).then(function ([participationData, winnersData]) {
+        const tournamentWinners = {};
+        winnersData.forEach(d => {
+            tournamentWinners[d.year] = {
+                winner: d.winner,
+                runnerUp: d.runnerUp,
+                score: d.score,
+                totalParticipants: +d.totalParticipants
+            };
+        });
+        // Check if we're in a Jupyter environment
+        if (window.Jupyter) {
+            window.Jupyter.notebook.events.on("kernel_ready.Kernel", function () {
+                createTimeline(participationData, tournamentWinners);
+            });
+        } else {
+            // If not in Jupyter, just call createTimeline directly
+            createTimeline(participationData, tournamentWinners);
+        }
+    });
+});
