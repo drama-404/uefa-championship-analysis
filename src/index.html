@@ -3,133 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEFA Euro Timeline</title>
+    <title>EURO Success Across Europe</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+        #map-container {
             width: 100%;
-            height: 100%;
-            overflow: hidden;
-            font-family: 'Montserrat', sans-serif;
+            height: 100vh;
         }
-
-        #timeline-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            background: linear-gradient(90deg, #1A365D, #24497c);
+        .country {
+            stroke: #fff;
+            stroke-width: 0.5px;
         }
-
-        #start-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        #replay-button {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-        }
-
-        .title {
-            font-weight: 700;
-            font-size: 28px;
-            fill: #FFD700;
-        }
-
-        .subtitle {
-            font-weight: 400;
-            font-size: 18px;
-            fill: white;
-        }
-
-        .description {
-            font-weight: 400;
-            font-size: 13px;
-            fill: white;
-        }
-
-        .hint {
-            font-size: 12px;
-            fill: #779dd2;
-        }
-
-        .timeline-line {
-            stroke: #FFD700;
-            stroke-width: 2;
-        }
-
-        .country-flag {
-            cursor: pointer;
-        }
-
-        .country-label {
-            font-size: 12px;
-            fill: #FFFFFF;
-        }
-
-        .year-label {
-            font-size: 14px;
-            fill: #FFD700;
-            font-weight: bold;
-        }
-
-        .country-item {
-            pointer-events: all;
-        }
-
-        .year-hover-area {
-            pointer-events: all;
-        }
-
-        .country-hover-area {
-            pointer-events: all;
-        }
-
         .tooltip {
-            font-family: 'Montserrat', sans-serif;
             position: absolute;
             background-color: rgba(255, 255, 255, 0.9);
-            color: #333;
-            border-radius: 5px;
+            border: 1px solid #ddd;
             padding: 10px;
-            font-size: 12px;
             pointer-events: none;
-        }
-
-        .country-tooltip {
-            z-index: 1001;
-        }
-
-        .year-tooltip {
-            z-index: 1000;
-        }
-
-        button {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #FFD700;
-            color: #1A365D;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #FFC000;
         }
     </style>
 </head>
-
 <body>
-    <div id="timeline-container"></div>
-
+    <div id="map-container"></div>
     <script src="script.js"></script>
 </body>
-
 </html>
