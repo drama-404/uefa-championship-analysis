@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EURO Success Across Europe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
         #map-container {
             width: 100%;
             height: 100vh;
+
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: linear-gradient(90deg, #d5d7dd, #ffffff);
+            z-index: 1;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .title2 {
+            font-weight: 600;
+            font-size: 20px;
+            fill: #1A365D;
+        }
+
+        .subtitle2 {
+            font-weight: 500;
+            font-size: 14px;
+            fill: #24497c;
+        }
+
+        .description2 {
+            font-weight: 400;
+            font-size: 12px;
+            fill: #24497c;
+        }
+
+        .title-text {
+            fill: #1A365D;
+        }
+
+        .hint2 {
+            font-size: 10px;
+            fill: #779dd2;
         }
         .country {
             stroke: #fff;
@@ -26,11 +64,32 @@
             border: 1px solid #ddd;
             padding: 10px;
             pointer-events: none;
+            z-index: 1000;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            padding: 10px;
+            pointer-events: none;
+            font-size: 12px;
+        }
+        
+        .tooltip table {
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        
+        .tooltip th, .tooltip td {
+            border: 1px solid #ddd;
+            padding: 3px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <div id="map-container"></div>
+    <div id="dashboard-container"></div>
     <script src="script.js"></script>
 </body>
 </html>

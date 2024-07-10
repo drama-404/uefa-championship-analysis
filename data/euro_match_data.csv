@@ -65,21 +65,21 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 1988,Netherlands,NED,USSR,2.0,0.0,2.0,0,0,win,FINAL,1988-06-25,0,8
 1988,Italy,ITA,USSR,0.0,2.0,0.0,0,0,loss,SEMIFINAL,1988-06-22,0,8
 1988,Netherlands,NED,West Germany,2.0,1.0,2.0,0,0,win,SEMIFINAL,1988-06-21,0,8
-1988,Republic of Ireland,IRL,Netherlands,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-18,0,8
-1988,Netherlands,NED,Republic of Ireland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1988-06-18,0,8
+1988,Ireland,IRL,Netherlands,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-18,0,8
+1988,Netherlands,NED,Ireland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1988-06-18,0,8
 1988,England,ENG,USSR,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,1988-06-18,0,8
 1988,Spain,ESP,West Germany,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-17,0,8
 1988,Italy,ITA,Denmark,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,1988-06-17,0,8
 1988,Denmark,DEN,Italy,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-17,0,8
-1988,Republic of Ireland,IRL,USSR,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,1988-06-15,0,8
+1988,Ireland,IRL,USSR,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,1988-06-15,0,8
 1988,England,ENG,Netherlands,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,1988-06-15,0,8
 1988,Netherlands,NED,England,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,1988-06-15,0,8
 1988,Italy,ITA,Spain,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1988-06-14,0,8
 1988,Spain,ESP,Italy,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-14,0,8
 1988,Denmark,DEN,West Germany,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-14,0,8
 1988,Netherlands,NED,USSR,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-12,0,8
-1988,England,ENG,Republic of Ireland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-12,0,8
-1988,Republic of Ireland,IRL,England,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1988-06-12,0,8
+1988,England,ENG,Ireland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1988-06-12,0,8
+1988,Ireland,IRL,England,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1988-06-12,0,8
 1988,Denmark,DEN,Spain,2.0,3.0,2.0,0,0,loss,GROUP_STANDINGS,1988-06-11,0,8
 1988,Spain,ESP,Denmark,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,1988-06-11,0,8
 1988,Italy,ITA,West Germany,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,1988-06-10,0,8
@@ -128,8 +128,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 1996,Germany,GER,Italy,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,1996-06-19,1,16
 1996,Russia,RUS,Czechia,3.0,3.0,3.0,0,0,draw,GROUP_STANDINGS,1996-06-19,0,16
 1996,Czechia,CZE,Russia,3.0,3.0,3.0,0,0,draw,GROUP_STANDINGS,1996-06-19,0,16
-1996,Türkiye,TUR,Denmark,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-19,0,16
-1996,Denmark,DEN,Türkiye,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,1996-06-19,0,16
+1996,Turkey,TUR,Denmark,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-19,0,16
+1996,Denmark,DEN,Turkey,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,1996-06-19,0,16
 1996,Croatia,CRO,Portugal,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-19,0,16
 1996,Portugal,POR,Croatia,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,1996-06-19,0,16
 1996,Netherlands,NED,England,1.0,4.0,0.0,0,1,loss,GROUP_STANDINGS,1996-06-18,0,16
@@ -150,14 +150,14 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 1996,England,ENG,Scotland,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,1996-06-15,0,16
 1996,Czechia,CZE,Italy,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,1996-06-14,1,16
 1996,Italy,ITA,Czechia,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,1996-06-14,1,16
-1996,Portugal,POR,Türkiye,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1996-06-14,0,16
-1996,Türkiye,TUR,Portugal,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-14,0,16
+1996,Portugal,POR,Turkey,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1996-06-14,0,16
+1996,Turkey,TUR,Portugal,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-14,0,16
 1996,Switzerland,SUI,Netherlands,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-13,0,16
 1996,Netherlands,NED,Switzerland,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,1996-06-13,0,16
 1996,Bulgaria,BUL,Romania,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1996-06-13,0,16
 1996,Romania,ROU,Bulgaria,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-13,0,16
-1996,Türkiye,TUR,Croatia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-11,0,16
-1996,Croatia,CRO,Türkiye,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1996-06-11,0,16
+1996,Turkey,TUR,Croatia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-11,0,16
+1996,Croatia,CRO,Turkey,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,1996-06-11,0,16
 1996,Italy,ITA,Russia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,1996-06-11,0,16
 1996,Russia,RUS,Italy,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,1996-06-11,0,16
 1996,Romania,ROU,France,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,1996-06-10,0,16
@@ -183,8 +183,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2000,Netherlands,NED,Yugoslavia,6.0,1.0,5.0,1,0,win,QUARTER_FINALS,2000-06-25,0,16
 2000,Italy,ITA,Romania,2.0,0.0,2.0,0,0,win,QUARTER_FINALS,2000-06-24,1,16
 2000,Romania,ROU,Italy,0.0,2.0,0.0,0,0,loss,QUARTER_FINALS,2000-06-24,1,16
-2000,Türkiye,TUR,Portugal,0.0,2.0,0.0,0,0,loss,QUARTER_FINALS,2000-06-24,1,16
-2000,Portugal,POR,Türkiye,2.0,0.0,2.0,0,0,win,QUARTER_FINALS,2000-06-24,1,16
+2000,Turkey,TUR,Portugal,0.0,2.0,0.0,0,0,loss,QUARTER_FINALS,2000-06-24,1,16
+2000,Portugal,POR,Turkey,2.0,0.0,2.0,0,0,win,QUARTER_FINALS,2000-06-24,1,16
 2000,France,FRA,Netherlands,2.0,3.0,2.0,0,0,loss,GROUP_STANDINGS,2000-06-21,0,16
 2000,Netherlands,NED,France,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,2000-06-21,0,16
 2000,Denmark,DEN,Czechia,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-21,0,16
@@ -198,8 +198,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2000,Romania,ROU,England,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,2000-06-20,0,16
 2000,Italy,ITA,Sweden,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-19,0,16
 2000,Sweden,SWE,Italy,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2000-06-19,0,16
-2000,Türkiye,TUR,Belgium,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-19,1,16
-2000,Belgium,BEL,Türkiye,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-19,1,16
+2000,Turkey,TUR,Belgium,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-19,1,16
+2000,Belgium,BEL,Turkey,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-19,1,16
 2000,Norway,NOR,Yugoslavia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-18,1,16
 2000,Slovenia,SVN,Spain,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2000-06-18,0,16
 2000,Spain,ESP,Slovenia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-18,0,16
@@ -211,8 +211,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2000,Netherlands,NED,Denmark,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2000-06-16,0,16
 2000,Czechia,CZE,France,1.0,2.0,0.0,0,1,loss,GROUP_STANDINGS,2000-06-16,0,16
 2000,France,FRA,Czechia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-16,0,16
-2000,Sweden,SWE,Türkiye,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2000-06-15,0,16
-2000,Türkiye,TUR,Sweden,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2000-06-15,0,16
+2000,Sweden,SWE,Turkey,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2000-06-15,0,16
+2000,Turkey,TUR,Sweden,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2000-06-15,0,16
 2000,Italy,ITA,Belgium,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-14,0,16
 2000,Belgium,BEL,Italy,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-14,0,16
 2000,Slovenia,SVN,Yugoslavia,3.0,3.0,3.0,0,0,draw,GROUP_STANDINGS,2000-06-13,1,16
@@ -226,8 +226,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2000,Czechia,CZE,Netherlands,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-11,0,16
 2000,France,FRA,Denmark,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2000-06-11,0,16
 2000,Denmark,DEN,France,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2000-06-11,0,16
-2000,Türkiye,TUR,Italy,1.0,2.0,0.0,0,1,loss,GROUP_STANDINGS,2000-06-11,0,16
-2000,Italy,ITA,Türkiye,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-11,0,16
+2000,Turkey,TUR,Italy,1.0,2.0,0.0,0,1,loss,GROUP_STANDINGS,2000-06-11,0,16
+2000,Italy,ITA,Turkey,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-11,0,16
 2000,Belgium,BEL,Sweden,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2000-06-10,1,16
 2000,Sweden,SWE,Belgium,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2000-06-10,1,16
 2004,Portugal,POR,Greece,0.0,1.0,0.0,0,0,loss,FINAL,2004-07-04,0,16
@@ -296,14 +296,14 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2008,Spain,ESP,Germany,1.0,0.0,1.0,0,0,win,FINAL,2008-06-29,0,16
 2008,Russia,RUS,Spain,0.0,3.0,0.0,0,0,loss,SEMIFINAL,2008-06-26,0,16
 2008,Spain,ESP,Russia,3.0,0.0,3.0,0,0,win,SEMIFINAL,2008-06-26,0,16
-2008,Germany,GER,Türkiye,3.0,2.0,3.0,0,0,win,SEMIFINAL,2008-06-25,0,16
-2008,Türkiye,TUR,Germany,2.0,3.0,2.0,0,0,loss,SEMIFINAL,2008-06-25,0,16
+2008,Germany,GER,Turkey,3.0,2.0,3.0,0,0,win,SEMIFINAL,2008-06-25,0,16
+2008,Turkey,TUR,Germany,2.0,3.0,2.0,0,0,loss,SEMIFINAL,2008-06-25,0,16
 2008,Spain,ESP,Italy,0.0,0.0,0.0,0,0,draw,QUARTER_FINALS,2008-06-22,0,16
 2008,Italy,ITA,Spain,0.0,0.0,0.0,0,0,draw,QUARTER_FINALS,2008-06-22,0,16
 2008,Netherlands,NED,Russia,1.0,3.0,1.0,0,0,loss,QUARTER_FINALS,2008-06-21,0,16
 2008,Russia,RUS,Netherlands,3.0,1.0,3.0,0,0,win,QUARTER_FINALS,2008-06-21,0,16
-2008,Croatia,CRO,Türkiye,1.0,1.0,1.0,0,0,draw,QUARTER_FINALS,2008-06-20,0,16
-2008,Türkiye,TUR,Croatia,1.0,1.0,1.0,0,0,draw,QUARTER_FINALS,2008-06-20,0,16
+2008,Croatia,CRO,Turkey,1.0,1.0,1.0,0,0,draw,QUARTER_FINALS,2008-06-20,0,16
+2008,Turkey,TUR,Croatia,1.0,1.0,1.0,0,0,draw,QUARTER_FINALS,2008-06-20,0,16
 2008,Portugal,POR,Germany,2.0,3.0,2.0,0,0,loss,QUARTER_FINALS,2008-06-19,0,16
 2008,Germany,GER,Portugal,3.0,2.0,3.0,0,0,win,QUARTER_FINALS,2008-06-19,0,16
 2008,Russia,RUS,Sweden,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-18,0,16
@@ -318,8 +318,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2008,Germany,GER,Austria,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2008-06-16,0,16
 2008,Poland,POL,Croatia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-16,0,16
 2008,Croatia,CRO,Poland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2008-06-16,0,16
-2008,Türkiye,TUR,Czechia,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,2008-06-15,1,16
-2008,Czechia,CZE,Türkiye,2.0,3.0,2.0,0,0,loss,GROUP_STANDINGS,2008-06-15,1,16
+2008,Turkey,TUR,Czechia,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,2008-06-15,1,16
+2008,Czechia,CZE,Turkey,2.0,3.0,2.0,0,0,loss,GROUP_STANDINGS,2008-06-15,1,16
 2008,Switzerland,SUI,Portugal,2.0,0.0,1.0,0,1,win,GROUP_STANDINGS,2008-06-15,0,16
 2008,Portugal,POR,Switzerland,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-15,0,16
 2008,Greece,GRE,Russia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-14,0,16
@@ -334,8 +334,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2008,Poland,POL,Austria,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2008-06-12,0,16
 2008,Croatia,CRO,Germany,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-12,1,16
 2008,Germany,GER,Croatia,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2008-06-12,1,16
-2008,Switzerland,SUI,Türkiye,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2008-06-11,0,16
-2008,Türkiye,TUR,Switzerland,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-11,0,16
+2008,Switzerland,SUI,Turkey,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2008-06-11,0,16
+2008,Turkey,TUR,Switzerland,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-11,0,16
 2008,Czechia,CZE,Portugal,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2008-06-11,0,16
 2008,Portugal,POR,Czechia,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2008-06-11,0,16
 2008,Greece,GRE,Sweden,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-10,0,16
@@ -350,8 +350,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2008,Poland,POL,Germany,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-08,0,16
 2008,Austria,AUT,Croatia,0.0,1.0,-1.0,0,1,loss,GROUP_STANDINGS,2008-06-08,0,16
 2008,Croatia,CRO,Austria,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2008-06-08,0,16
-2008,Portugal,POR,Türkiye,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-07,0,16
-2008,Türkiye,TUR,Portugal,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-07,0,16
+2008,Portugal,POR,Turkey,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2008-06-07,0,16
+2008,Turkey,TUR,Portugal,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-07,0,16
 2008,Switzerland,SUI,Czechia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2008-06-07,0,16
 2008,Czechia,CZE,Switzerland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2008-06-07,0,16
 2012,Spain,ESP,Italy,4.0,0.0,4.0,0,0,win,FINAL,2012-07-01,0,16
@@ -372,8 +372,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2012,France,FRA,Sweden,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-19,0,16
 2012,England,ENG,Ukraine,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2012-06-19,0,16
 2012,Ukraine,UKR,England,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-19,0,16
-2012,Italy,ITA,Republic of Ireland,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2012-06-18,1,16
-2012,Republic of Ireland,IRL,Italy,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-18,1,16
+2012,Italy,ITA,Ireland,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2012-06-18,1,16
+2012,Ireland,IRL,Italy,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-18,1,16
 2012,Croatia,CRO,Spain,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-18,0,16
 2012,Spain,ESP,Croatia,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2012-06-18,0,16
 2012,Denmark,DEN,Germany,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2012-06-17,0,16
@@ -388,8 +388,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2012,England,ENG,Sweden,3.0,2.0,3.0,0,0,win,GROUP_STANDINGS,2012-06-15,0,16
 2012,Ukraine,UKR,France,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-15,0,16
 2012,France,FRA,Ukraine,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2012-06-15,0,16
-2012,Spain,ESP,Republic of Ireland,4.0,0.0,4.0,0,0,win,GROUP_STANDINGS,2012-06-14,0,16
-2012,Republic of Ireland,IRL,Spain,0.0,4.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-14,0,16
+2012,Spain,ESP,Ireland,4.0,0.0,4.0,0,0,win,GROUP_STANDINGS,2012-06-14,0,16
+2012,Ireland,IRL,Spain,0.0,4.0,0.0,0,0,loss,GROUP_STANDINGS,2012-06-14,0,16
 2012,Italy,ITA,Croatia,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-14,0,16
 2012,Croatia,CRO,Italy,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-14,0,16
 2012,Netherlands,NED,Germany,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2012-06-13,0,16
@@ -404,8 +404,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2012,Sweden,SWE,Ukraine,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2012-06-11,0,16
 2012,France,FRA,England,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-11,0,16
 2012,England,ENG,France,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-11,0,16
-2012,Republic of Ireland,IRL,Croatia,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2012-06-10,0,16
-2012,Croatia,CRO,Republic of Ireland,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2012-06-10,0,16
+2012,Ireland,IRL,Croatia,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2012-06-10,0,16
+2012,Croatia,CRO,Ireland,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2012-06-10,0,16
 2012,Spain,ESP,Italy,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-10,0,16
 2012,Italy,ITA,Spain,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2012-06-10,0,16
 2012,Germany,GER,Portugal,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2012-06-09,0,16
@@ -438,8 +438,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2016,Belgium,BEL,Hungary,4.0,0.0,4.0,0,0,win,ROUND_OF_16,2016-06-26,0,24
 2016,Germany,GER,Slovakia,3.0,0.0,3.0,0,0,win,ROUND_OF_16,2016-06-26,0,24
 2016,Slovakia,SVK,Germany,0.0,3.0,0.0,0,0,loss,ROUND_OF_16,2016-06-26,0,24
-2016,France,FRA,Republic of Ireland,2.0,1.0,1.0,0,1,win,ROUND_OF_16,2016-06-26,1,24
-2016,Republic of Ireland,IRL,France,1.0,2.0,1.0,0,0,loss,ROUND_OF_16,2016-06-26,1,24
+2016,France,FRA,Ireland,2.0,1.0,1.0,0,1,win,ROUND_OF_16,2016-06-26,1,24
+2016,Ireland,IRL,France,1.0,2.0,1.0,0,0,loss,ROUND_OF_16,2016-06-26,1,24
 2016,Croatia,CRO,Portugal,0.0,1.0,0.0,0,0,loss,ROUND_OF_16,2016-06-25,0,24
 2016,Portugal,POR,Croatia,1.0,0.0,1.0,0,0,win,ROUND_OF_16,2016-06-25,0,24
 2016,Wales,WAL,Northern Ireland,1.0,0.0,0.0,1,0,win,ROUND_OF_16,2016-06-25,0,24
@@ -448,16 +448,16 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2016,Poland,POL,Switzerland,1.0,1.0,1.0,0,0,draw,ROUND_OF_16,2016-06-25,0,24
 2016,Sweden,SWE,Belgium,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-22,0,24
 2016,Belgium,BEL,Sweden,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-22,0,24
-2016,Italy,ITA,Republic of Ireland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-22,0,24
-2016,Republic of Ireland,IRL,Italy,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-22,0,24
+2016,Italy,ITA,Ireland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-22,0,24
+2016,Ireland,IRL,Italy,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-22,0,24
 2016,Hungary,HUN,Portugal,3.0,3.0,3.0,0,0,draw,GROUP_STANDINGS,2016-06-22,0,24
 2016,Portugal,POR,Hungary,3.0,3.0,3.0,0,0,draw,GROUP_STANDINGS,2016-06-22,0,24
 2016,Iceland,ISL,Austria,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-22,0,24
 2016,Austria,AUT,Iceland,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2016-06-22,0,24
 2016,Croatia,CRO,Spain,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-21,0,24
 2016,Spain,ESP,Croatia,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2016-06-21,0,24
-2016,Czechia,CZE,Türkiye,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-21,0,24
-2016,Türkiye,TUR,Czechia,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-21,0,24
+2016,Czechia,CZE,Turkey,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-21,0,24
+2016,Turkey,TUR,Czechia,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-21,0,24
 2016,Northern Ireland,NIR,Germany,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-21,0,24
 2016,Germany,GER,Northern Ireland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-21,0,24
 2016,Ukraine,UKR,Poland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-21,0,24
@@ -474,10 +474,10 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2016,Austria,AUT,Portugal,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2016-06-18,0,24
 2016,Iceland,ISL,Hungary,1.0,1.0,-1.0,1,1,draw,GROUP_STANDINGS,2016-06-18,0,24
 2016,Hungary,HUN,Iceland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2016-06-18,0,24
-2016,Belgium,BEL,Republic of Ireland,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2016-06-18,0,24
-2016,Republic of Ireland,IRL,Belgium,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-18,0,24
-2016,Spain,ESP,Türkiye,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2016-06-17,0,24
-2016,Türkiye,TUR,Spain,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-17,0,24
+2016,Belgium,BEL,Ireland,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2016-06-18,0,24
+2016,Ireland,IRL,Belgium,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-18,0,24
+2016,Spain,ESP,Turkey,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2016-06-17,0,24
+2016,Turkey,TUR,Spain,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-17,0,24
 2016,Czechia,CZE,Croatia,2.0,2.0,1.0,0,1,draw,GROUP_STANDINGS,2016-06-17,0,24
 2016,Croatia,CRO,Czechia,2.0,2.0,2.0,0,0,draw,GROUP_STANDINGS,2016-06-17,0,24
 2016,Italy,ITA,Sweden,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-17,0,24
@@ -500,16 +500,16 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2016,Hungary,HUN,Austria,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-14,1,24
 2016,Belgium,BEL,Italy,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-13,0,24
 2016,Italy,ITA,Belgium,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-13,0,24
-2016,Republic of Ireland,IRL,Sweden,1.0,1.0,0.0,1,0,draw,GROUP_STANDINGS,2016-06-13,0,24
-2016,Sweden,SWE,Republic of Ireland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2016-06-13,0,24
+2016,Ireland,IRL,Sweden,1.0,1.0,0.0,1,0,draw,GROUP_STANDINGS,2016-06-13,0,24
+2016,Sweden,SWE,Ireland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2016-06-13,0,24
 2016,Spain,ESP,Czechia,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-13,0,24
 2016,Czechia,CZE,Spain,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-13,0,24
 2016,Germany,GER,Ukraine,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-12,0,24
 2016,Ukraine,UKR,Germany,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-12,0,24
 2016,Poland,POL,Northern Ireland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-12,0,24
 2016,Northern Ireland,NIR,Poland,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-12,0,24
-2016,Türkiye,TUR,Croatia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-12,0,24
-2016,Croatia,CRO,Türkiye,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-12,0,24
+2016,Turkey,TUR,Croatia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2016-06-12,0,24
+2016,Croatia,CRO,Turkey,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2016-06-12,0,24
 2016,England,ENG,Russia,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2016-06-11,0,24
 2016,Russia,RUS,England,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2016-06-11,0,24
 2016,Wales,WAL,Slovakia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2016-06-11,0,24
@@ -570,8 +570,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2020,Netherlands,NED,North Macedonia,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-21,0,24
 2020,Italy,ITA,Wales,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2021-06-20,1,24
 2020,Wales,WAL,Italy,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2021-06-20,1,24
-2020,Switzerland,SUI,Türkiye,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-20,0,24
-2020,Türkiye,TUR,Switzerland,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2021-06-20,0,24
+2020,Switzerland,SUI,Turkey,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-20,0,24
+2020,Turkey,TUR,Switzerland,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2021-06-20,0,24
 2020,Spain,ESP,Poland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2021-06-19,0,24
 2020,Poland,POL,Spain,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2021-06-19,0,24
 2020,Portugal,POR,Germany,2.0,4.0,0.0,2,0,loss,GROUP_STANDINGS,2021-06-19,0,24
@@ -592,8 +592,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2020,North Macedonia,MKD,Ukraine,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2021-06-17,0,24
 2020,Italy,ITA,Switzerland,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-16,0,24
 2020,Switzerland,SUI,Italy,0.0,3.0,0.0,0,0,loss,GROUP_STANDINGS,2021-06-16,0,24
-2020,Türkiye,TUR,Wales,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2021-06-16,0,24
-2020,Wales,WAL,Türkiye,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2021-06-16,0,24
+2020,Turkey,TUR,Wales,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2021-06-16,0,24
+2020,Wales,WAL,Turkey,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2021-06-16,0,24
 2020,Finland,FIN,Russia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2021-06-16,0,24
 2020,Russia,RUS,Finland,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2021-06-16,0,24
 2020,France,FRA,Germany,1.0,0.0,0.0,1,0,win,GROUP_STANDINGS,2021-06-15,0,24
@@ -618,10 +618,10 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2020,Finland,FIN,Denmark,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2021-06-12,0,24
 2020,Wales,WAL,Switzerland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2021-06-12,0,24
 2020,Switzerland,SUI,Wales,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2021-06-12,0,24
-2020,Türkiye,TUR,Italy,0.0,3.0,-1.0,1,0,loss,GROUP_STANDINGS,2021-06-11,0,24
-2020,Italy,ITA,Türkiye,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-11,0,24
-2024,Czechia,CZE,Türkiye,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2024-06-26,2,24
-2024,Türkiye,TUR,Czechia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2024-06-26,2,24
+2020,Turkey,TUR,Italy,0.0,3.0,-1.0,1,0,loss,GROUP_STANDINGS,2021-06-11,0,24
+2020,Italy,ITA,Turkey,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2021-06-11,0,24
+2024,Czechia,CZE,Turkey,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2024-06-26,2,24
+2024,Turkey,TUR,Czechia,2.0,1.0,2.0,0,0,win,GROUP_STANDINGS,2024-06-26,2,24
 2024,Georgia,GEO,Portugal,2.0,0.0,1.0,0,1,win,GROUP_STANDINGS,2024-06-26,0,24
 2024,Portugal,POR,Georgia,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2024-06-26,0,24
 2024,Ukraine,UKR,Belgium,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2024-06-26,0,24
@@ -646,8 +646,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2024,Germany,GER,Switzerland,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2024-06-23,0,24
 2024,Belgium,BEL,Romania,2.0,0.0,2.0,0,0,win,GROUP_STANDINGS,2024-06-22,0,24
 2024,Romania,ROU,Belgium,0.0,2.0,0.0,0,0,loss,GROUP_STANDINGS,2024-06-22,0,24
-2024,Türkiye,TUR,Portugal,0.0,3.0,-1.0,1,0,loss,GROUP_STANDINGS,2024-06-22,0,24
-2024,Portugal,POR,Türkiye,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2024-06-22,0,24
+2024,Turkey,TUR,Portugal,0.0,3.0,-1.0,1,0,loss,GROUP_STANDINGS,2024-06-22,0,24
+2024,Portugal,POR,Turkey,3.0,0.0,3.0,0,0,win,GROUP_STANDINGS,2024-06-22,0,24
 2024,Georgia,GEO,Czechia,1.0,1.0,0.0,0,1,draw,GROUP_STANDINGS,2024-06-22,0,24
 2024,Czechia,CZE,Georgia,1.0,1.0,1.0,0,0,draw,GROUP_STANDINGS,2024-06-22,0,24
 2024,Netherlands,NED,France,0.0,0.0,0.0,0,0,draw,GROUP_STANDINGS,2024-06-21,0,24
@@ -670,8 +670,8 @@ year,country,country_code,opponent,goals_scored,goals_conceded,open_play_goals,o
 2024,Albania,ALB,Croatia,2.0,2.0,2.0,0,0,draw,GROUP_STANDINGS,2024-06-19,0,24
 2024,Portugal,POR,Czechia,2.0,1.0,1.0,1,0,win,GROUP_STANDINGS,2024-06-18,0,24
 2024,Czechia,CZE,Portugal,1.0,2.0,1.0,0,0,loss,GROUP_STANDINGS,2024-06-18,0,24
-2024,Türkiye,TUR,Georgia,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2024-06-18,0,24
-2024,Georgia,GEO,Türkiye,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2024-06-18,0,24
+2024,Turkey,TUR,Georgia,3.0,1.0,3.0,0,0,win,GROUP_STANDINGS,2024-06-18,0,24
+2024,Georgia,GEO,Turkey,1.0,3.0,1.0,0,0,loss,GROUP_STANDINGS,2024-06-18,0,24
 2024,Austria,AUT,France,0.0,1.0,-1.0,1,0,loss,GROUP_STANDINGS,2024-06-17,0,24
 2024,France,FRA,Austria,1.0,0.0,1.0,0,0,win,GROUP_STANDINGS,2024-06-17,0,24
 2024,Belgium,BEL,Slovakia,0.0,1.0,0.0,0,0,loss,GROUP_STANDINGS,2024-06-17,0,24
